@@ -1,0 +1,17 @@
+.user-container {
+  background: linear-gradient(#31324f, #1f202e);
+  border: 1px solid white;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+  color: rgb(255, 255, 255);
+}
+
+.user-char {
+  margin-left: 15px;
+  width: 70%;
+}
+.pay-button {
+  cursor: pointer;
+}
