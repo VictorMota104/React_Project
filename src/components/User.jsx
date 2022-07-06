@@ -1,18 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./User.css";
+import { useModalContext } from "./modal.context";
 
 const User = ({ user }) => {
+  const { openModal } = useModalContext();
+  const testModal = () => openModal({ messege: "Pagamento para " + user.name });
+
   return (
     <div className="user-container">
-      <div>{user.photo}</div>
-
+      <div>
+        <img className="user-photo" src={user.img}></img>
+      </div>
       <div className="user-char">
         <div className="user-name">Nome do usuário - {user.name}</div>
         <div className="user-username">
           ID: {user.id} - Username: {user.username}
         </div>
       </div>
-      <button className="pay-button">Pagar</button>
+      <button onClick={testModal} className="pay-button">
+        Pagar
+      </button>
     </div>
   );
 };

@@ -1,0 +1,51 @@
+.ant-modal {
+  background-color: red;
+  width: 300px !important;
+  height: 250px;
+}
+.ant-modal-content {
+  width: 300px;
+  height: 250px;
+}
+
+.ant-modal-body {
+  background-color: #31324f;
+  height: 50px;
+  color: #fff;
+}
+.ant-modal-body p {
+  margin-top: -5px;
+}
+
+.ant-modal-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.ant-modal-close-x {
+  color: #fff;
+}
+
+.ant-modal-footer {
+  margin-top: 150px;
+  display: none;
+}
+.input {
+  color: black;
+  width: 80%;
+  border: none;
+  border: 1px solid;
+}
+
+.input-select {
+  color: black;
+  margin-top: 15px;
+  width: 80%;
+  border-radius: 0;
+}
+.ant-btn {
+  margin-top: 20px;
+}
