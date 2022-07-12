@@ -1,15 +1,14 @@
 .ant-modal {
-  background-color: red;
   width: 300px !important;
-  height: 250px;
+  height: 200px;
 }
 .ant-modal-content {
   width: 300px;
-  height: 250px;
+  height: 200px;
 }
 
 .ant-modal-body {
-  background-color: #31324f;
+  background: #1d75c7;
   height: 50px;
   color: #fff;
 }
@@ -22,7 +21,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 28px;
 }
 
 .ant-modal-close-x {
@@ -47,5 +46,5 @@
   border-radius: 0;
 }
 .ant-btn {
-  margin-top: 20px;
+  margin-top: 18px;
 }
