@@ -5,6 +5,7 @@
 .ant-modal-content {
   width: 300px;
   height: 200px;
+  background-color: #292929 !important;
 }
 
 .ant-modal-body {
@@ -22,6 +23,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 28px;
+  color: #fff;
+}
+.ant-modal-center h3 {
+  color: #fff;
+}
+.ant-modal-center p {
+  margin: 0;
+  padding: 0;
+  margin-top: -18px;
+  margin-bottom: 3px;
 }
 
 .ant-modal-close-x {
@@ -32,18 +43,20 @@
   margin-top: 150px;
   display: none;
 }
-.input {
-  color: black;
+.input-value {
+  color: #ffffff;
   width: 80%;
   border: none;
   border: 1px solid;
+  background-color: #2b2b2b;
 }
 
 .input-select {
-  color: black;
+  color: #ffffff;
   margin-top: 15px;
   width: 80%;
   border-radius: 0;
+  background-color: #2b2b2b;
 }
 .ant-btn {
   margin-top: 18px;
