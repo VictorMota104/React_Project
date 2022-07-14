@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useModalContext } from "./modal.context";
 import "./Users.css";
+import { useModalContext } from "../modal.context";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -24,7 +24,7 @@ const Users = () => {
     <>
       {users.map((user) => {
         const testModal = () =>
-          openModal({ messege: "Pagamento para " + user.name });
+          openModal({ messege: "Payment  for " + user.name });
 
         return (
           <div className="user-container">
@@ -32,15 +32,15 @@ const Users = () => {
 
             <div className="user-char">
               <div className="user-name">
-                <strong>Nome do usuário:</strong> {user.name}
+                <strong>Username:</strong> {user.name}
               </div>
               <div className="user-username">
-                <strong>ID:</strong> {user.id} - <strong>Username: </strong>
+                <strong>ID:</strong> {user.id} - <strong>Nickname: </strong>
                 {user.username}
               </div>
             </div>
             <button className="pay-button" onClick={testModal}>
-              Pagar
+              Pay
             </button>
           </div>
         );

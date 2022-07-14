@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: #202020;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid black;
+}
+.title {
+  opacity: 85%;
+  font-family: "Passion One", cursive;
+  font-weight: 600;
+  font-size: 38px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  transition: 200ms;
+}
+.title:hover {
+  opacity: 100%;
+}
+#tech {
+  color: #ffffff;
+}
+#bank {
+  color: #1890ff;
+  margin-right: 10px;
+}
+
+#card {
+  color: white;
+  font-size: 30px;
+}

@@ -8,7 +8,9 @@ import axios from "axios";
 const Modal = () => {
   const [cardInfo, setCardInfo] = useState({});
   const [step, setStep] = useState(true);
-  const [paymentError, setpaymentError] = useState("");
+  const [paymentError, setpaymentError] = useState(
+    "Payment completed successfully!"
+  );
   const [validInput, setvalidInput] = useState("");
   const [required, setRequired] = useState("none");
 
@@ -68,13 +70,13 @@ const Modal = () => {
     closeModal();
     setStep(true);
     setvalidInput("");
-    setpaymentError("");
+    setpaymentError("Payment completed successfully!");
     setCardInfo({});
   };
 
   const validationCard = () => {
     if (cardInfo == invalidCard) {
-      setpaymentError("NÃO");
+      setpaymentError("Invalid card!");
     }
   };
   function inputChange(e) {
@@ -92,16 +94,16 @@ const Modal = () => {
         <>
           <p>{messege}</p>
           <div className="ant-modal-center">
-            <p style={{ display: required }}>Campo obrigatório!</p>
+            <p style={{ display: required }}>Required field!</p>
 
             <NumberFormat
               value={validInput}
               onChange={inputChange}
               className="input-value"
               thousandSeparator={true}
-              prefix={"R$ "}
+              prefix={"$ "}
               inputmode="numeric"
-              placeholder="R$ 0,00"
+              placeholder="$ 0,00"
             />
 
             <select
@@ -112,10 +114,10 @@ const Modal = () => {
               }}
             >
               <option value={JSON.stringify(card)}>
-                Cartão com final {card.card_number.slice(-4)}
+                Final card {card.card_number.slice(-4)}
               </option>
               <option value={invalidCard}>
-                Cartão com final {invalidCard.card_number.slice(-4)}
+                Final card {invalidCard.card_number.slice(-4)}
               </option>
             </select>
             <button
@@ -127,20 +129,17 @@ const Modal = () => {
               type="submit"
               className="ant-btn ant-btn-primary"
             >
-              Pagar
+              Pay
             </button>
           </div>
         </>
       ) : (
         <>
-          <p>Recibo do pagamento</p>
+          <p>Receipt of payment</p>
           <div className="ant-modal-center">
-            <h3>
-              O pagamento <strong>{paymentError}</strong> foi concluído com
-              sucesso!
-            </h3>
+            <h3>{paymentError}</h3>
             <button className="ant-btn ant-btn-primary" onClick={finalPayment}>
-              Fechar
+              Close
             </button>
           </div>
         </>

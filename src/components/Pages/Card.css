@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap");
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.card {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  width: 380px;
+  height: 200px;
+  background-image: linear-gradient(#2020209d, #030414);
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.card-two {
+  font-family: "Roboto Mono", monospace;
+  margin: 0 auto;
+  width: 380px;
+  height: 200px;
+  background-image: linear-gradient(#9400d3, #030414);
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#marca {
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#numero {
+  color: #ffff;
+  font-weight: 400;
+  margin-left: 10px;
+  margin-top: 65px;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#validade {
+  color: #ffff;
+  font-weight: 300;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.logo-mastercard {
+  width: 60px;
+  height: 38px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
